@@ -69,12 +69,12 @@ curl -H "Authorization: Token {this number token}" http://0.0.0.0:5000/api/comme
 
 Add comments:
 ```
-curl POST -d 'post={post.id}&author={author.id}&content={Content}' -H "Authorization: Token 98f080e4d2ae1e9f5ef9333a8f1c70d0f3b12d4b" http://0.0.0.0:5000/api/comments/
+curl POST -d 'post={post.id}&author={author.id}&content={Content}' -H "Authorization: Token {this number token}" http://0.0.0.0:5000/api/comments/
 ```
 
 Up vote post:
 ```
-curl POST -d 'user=1&post=3&value=1' -H "Authorization: Token 98f080e4d2ae1e9f5ef9333a8f1c70d0f3b12d4b" http://0.0.0.0:5000/api/posts/{post.id}/upvote/
+curl POST -d 'user={user.id}&post={post.id}&value={value}' -H "Authorization: Token {this number token}" http://0.0.0.0:5000/api/posts/{post.id}/upvote/
 ```
 
 ### Endpoints
